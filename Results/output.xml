@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180823 03:47:36.244" generator="Robot 3.0.4 (Python 2.7.13 on darwin)">
+<suite source="/Users/nahuelcacavelos/Desktop/pruebasRobotFramework/custom/TestCases/asSoundCheck.robot" id="s1" name="asSoundCheck">
+<test id="s1-t1" name="AudioDevice">
+<kw name="Correct Audio Device" library="keywords">
+<tags>
+<tag>AudioDevice</tag>
+<tag>Device</tag>
+</tags>
+<kw name="Get Audio Device">
+<assign>
+<var>&amp;{device}=</var>
+</assign>
+<msg timestamp="20180823 03:47:40.821" level="FAIL">No keyword with name 'Get Audio Device' found.</msg>
+<status status="FAIL" endtime="20180823 03:47:40.821" starttime="20180823 03:47:40.820"></status>
+</kw>
+<status status="FAIL" endtime="20180823 03:47:40.821" starttime="20180823 03:47:40.806"></status>
+</kw>
+<doc>Check if the current state of the device meets all the requirements</doc>
+<tags>
+<tag>AudioDevice</tag>
+<tag>Device</tag>
+</tags>
+<status status="FAIL" endtime="20180823 03:47:40.821" critical="yes" starttime="20180823 03:47:40.805">No keyword with name 'Get Audio Device' found.</status>
+</test>
+<status status="FAIL" endtime="20180823 03:47:40.822" starttime="20180823 03:47:36.247"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">AudioDevice</stat>
+<stat fail="1" pass="0">Device</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="asSoundCheck" pass="0">asSoundCheck</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180823 03:47:40.781" level="ERROR">Error in file '/Users/nahuelcacavelos/Desktop/pruebasRobotFramework/custom/TestCases/asSoundCheck.robot': Importing test library 'Libraries.SoundCheck' failed: ImportError: cannot import name Audio
+Traceback (most recent call last):
+  File "/Users/nahuelcacavelos/Desktop/pruebasRobotFramework/custom/Libraries/__init__.py", line 1, in &lt;module&gt;
+    from sound_check import *
+  File "/Users/nahuelcacavelos/Desktop/pruebasRobotFramework/custom/Libraries/sound_check.py", line 6, in &lt;module&gt;
+    from IPython.display import Audio
+PYTHONPATH:
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/bin
+  /Users/nahuelcacavelos/Desktop/pruebasRobotFramework
+  /~Desktop/pruebasRobotFramework/custom
+  /Users/nahuelcacavelos/Desktop/pruebasRobotFramework/custom
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python27.zip
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/plat-darwin
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/plat-mac
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/plat-mac/lib-scriptpackages
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/lib-tk
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/lib-old
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/lib-dynload
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/site-packages
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/site-packages/IPython/extensions</msg>
+<msg timestamp="20180823 03:47:40.799" level="ERROR">Error in file '/Users/nahuelcacavelos/Desktop/pruebasRobotFramework/custom/Resources/keywords.robot': Importing test library 'Libraries.AudioDevice' failed: ImportError: cannot import name Audio
+Traceback (most recent call last):
+  File "/Users/nahuelcacavelos/Desktop/pruebasRobotFramework/custom/Libraries/__init__.py", line 1, in &lt;module&gt;
+    from sound_check import *
+  File "/Users/nahuelcacavelos/Desktop/pruebasRobotFramework/custom/Libraries/sound_check.py", line 6, in &lt;module&gt;
+    from IPython.display import Audio
+PYTHONPATH:
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/bin
+  /Users/nahuelcacavelos/Desktop/pruebasRobotFramework
+  /~Desktop/pruebasRobotFramework/custom
+  /Users/nahuelcacavelos/Desktop/pruebasRobotFramework/custom
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python27.zip
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/plat-darwin
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/plat-mac
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/plat-mac/lib-scriptpackages
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/lib-tk
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/lib-old
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/lib-dynload
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/site-packages
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/site-packages/IPython/extensions</msg>
+<msg timestamp="20180823 03:47:40.801" level="ERROR">Error in file '/Users/nahuelcacavelos/Desktop/pruebasRobotFramework/custom/Resources/keywords.robot': Importing test library 'Libraries.SoundCheck' failed: ImportError: cannot import name Audio
+Traceback (most recent call last):
+  File "/Users/nahuelcacavelos/Desktop/pruebasRobotFramework/custom/Libraries/__init__.py", line 1, in &lt;module&gt;
+    from sound_check import *
+  File "/Users/nahuelcacavelos/Desktop/pruebasRobotFramework/custom/Libraries/sound_check.py", line 6, in &lt;module&gt;
+    from IPython.display import Audio
+PYTHONPATH:
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/bin
+  /Users/nahuelcacavelos/Desktop/pruebasRobotFramework
+  /~Desktop/pruebasRobotFramework/custom
+  /Users/nahuelcacavelos/Desktop/pruebasRobotFramework/custom
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python27.zip
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/plat-darwin
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/plat-mac
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/plat-mac/lib-scriptpackages
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/lib-tk
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/lib-old
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/lib-dynload
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/site-packages
+  /Users/nahuelcacavelos/Library/Enthought/Canopy/edm/envs/User/lib/python2.7/site-packages/IPython/extensions</msg>
+</errors>
+</robot>

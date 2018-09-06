@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180823 03:49:25.009" generator="Robot 3.0.4 (Python 2.7.13 on darwin)">
+<suite source="/Users/nahuelcacavelos/Desktop/pruebasRobotFramework/custom/TestCases/asSoundCheck.robot" id="s1" name="asSoundCheck">
+<test id="s1-t1" name="AudioDevice">
+<kw name="Correct Audio Device" library="keywords">
+<tags>
+<tag>AudioDevice</tag>
+<tag>Device</tag>
+</tags>
+<kw name="Get Audio Device" library="Libraries.AudioDevice">
+<assign>
+<var>&amp;{device}</var>
+</assign>
+<msg timestamp="20180823 03:49:28.986" level="FAIL">ValueError: Input and output device are different: [0, 1]</msg>
+<status status="FAIL" endtime="20180823 03:49:28.986" starttime="20180823 03:49:28.983"></status>
+</kw>
+<status status="FAIL" endtime="20180823 03:49:28.986" starttime="20180823 03:49:28.983"></status>
+</kw>
+<doc>Check if the current state of the device meets all the requirements</doc>
+<tags>
+<tag>AudioDevice</tag>
+<tag>Device</tag>
+</tags>
+<status status="FAIL" endtime="20180823 03:49:28.986" critical="yes" starttime="20180823 03:49:28.982">ValueError: Input and output device are different: [0, 1]</status>
+</test>
+<status status="FAIL" endtime="20180823 03:49:28.987" starttime="20180823 03:49:25.013"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">AudioDevice</stat>
+<stat fail="1" pass="0">Device</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="asSoundCheck" pass="0">asSoundCheck</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
